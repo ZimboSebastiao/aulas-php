@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04 - Loop e Array</title>
     <style>
-        body {background-color: lightyellow;}
+        body {background-color: blueviolet;}
         h1 {text-align: center;}
         table, th, td {
             border: solid 8px black;
