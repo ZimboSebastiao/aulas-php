@@ -119,11 +119,15 @@
         Isso auxiliará na entrada/saída correta dos dados manipulados pela função, além de melhorar as mensagens de erro quando ocorrem problemas.
         */
         function verificaNegativo(int $valor):string {
+            /* Early return
+            (é possível omitir o else neste caso)
+            */ 
             if ($valor < 0) {
                 return "é negativo";
-            } else {
-                return "não é negativo";
-            }
+            } 
+
+            return "não é negativo";
+            
         }
 
     ?>
