@@ -44,6 +44,46 @@
 
     <p>Estamos no curso de <?=dadosCurso()?></p>
     <p><?=dadosCurso()?> é ministrado no Senac Penha</p>
+
+    <hr>
+
+    <h2>Função com Parâmetros (ou argumentos)</h2>
+    <?php 
+
+        function soma($valor1, $valor2, $valor3){
+            $total = $valor1 + $valor2 + $valor3;
+            return $total;
+
+        }
+        
+    ?>
+    <!-- Chamando e exibindo diretamente o retorno -->
+    <p>Resultado 1: <?=soma(10, 20, 5)?></p>
+    <p>Resultado 2: <?=soma(23, 84, 1000.75)?></p>
     
+    
+
+    <?php 
+        // Chamando e guardando o retorno
+        $resultado3 = soma(500, 480, 700);
+    ?>
+    <p>Resultado 3: <?=$resultado3?></p>
+    <?php 
+        if ($resultado3 > 100) { ?>
+        <p>Vinicius  foi demitido!</p>
+        <?php
+        }
+        ?>
+
+
+    <hr>
+
+    <?php if (soma(2, 3,10) >= 10) { ?>
+        <p>Leandro reprovado</p> 
+
+        <?php  
+        }
+        ?>
+
 </body>
 </html>
