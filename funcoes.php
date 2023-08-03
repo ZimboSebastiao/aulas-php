@@ -27,6 +27,23 @@
         <h3>Chamada da sub-rotina/procedimento</h3>
         <?=dadosAutor()?>
     </section>
+
+
+    <hr>
+
+    <h2>Função com retorno de dados</h2>
+
+    <?php 
+    
+        function dadosCurso(){
+
+            return "Técnico em informática para Internet";
+        }
+    
+    ?>
+
+    <p>Estamos no curso de <?=dadosCurso()?></p>
+    <p><?=dadosCurso()?> é ministrado no Senac Penha</p>
     
 </body>
 </html>
