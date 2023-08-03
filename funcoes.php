@@ -76,14 +76,32 @@
         ?>
 
 
-    <hr>
-
     <?php if (soma(2, 3,10) >= 10) { ?>
         <p>Leandro reprovado</p> 
 
         <?php  
         }
         ?>
+
+
+
+    <hr>
+
+    <h2>Função com parâmetros opcionais</h2>
+    <?php 
+
+        // $pessoa é um parâmetro opcional com um valor padrão
+        function saudacao($mensagem, $pessoa = "Fulano(a)"){
+            return "Olá, $mensagem, $pessoa!";
+        }
+    
+    ?>
+    <p> <?=saudacao("bom dia", "Melissa")?> </p>
+    <p> <?=saudacao("bom noite", "Tanaka")?> </p>
+    <p> <?=saudacao("boa tarde")?> </p>
+
+
+
 
 </body>
 </html>
