@@ -49,7 +49,14 @@
 
     <hr>
     <h2>Númericas</h2>
-   
+    <h2>min, max, round</h2>
+    <?php 
+    $valores = [10, 5, 50, 1000, 275];
+    $valorQualquer = 1090.90;
+    ?>
+    <p>Menor valor: <?=min($valores)?></p>
+    <p>Meaiorr valor: <?=max($valores)?></p>
+    <p>Arrendondamneto: <?=round($valorQualquer)?></p>
 
 
 
