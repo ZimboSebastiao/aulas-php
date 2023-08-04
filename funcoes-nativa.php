@@ -103,11 +103,29 @@
     ?>
     <p>Soma dos valores: <?=$total?></p>
 
+    <h3>array_unique</h3>
+    <?php 
+    // Array que retorna um novo array com dados únicos.
+
+    $produtos = [
+        "Tv", "Notebook", "Tv",
+        "Geladeira", "Monitor", "Notebook",
+        "Teclado", "Mouse"
+    ];
+
+    $produtosUnicos = array_unique($produtos);
+    ?>
+
+    <pre><?=var_dump($produtos)?></pre>
+    <pre><?=var_dump($produtosUnicos)?></pre>
+
+
 
 
 
 
     <hr>
+
     <h2>Filtros</h2>
     <h2>Strings</h2>
     <h2>Strings</h2>
