@@ -58,9 +58,24 @@
     <p>Meaiorr valor: <?=max($valores)?></p>
     <p>Arrendondamneto: <?=round($valorQualquer)?></p>
 
-
-
+    <hr>
     <h2>Arrays</h2>
+    <h2>implode()</h2>
+    <?php
+    // Função que transforma array em string
+
+    $bandas = ["Rush", "Slayer", "Dio"];
+    $textoBandas = implode(" - ", $bandas);
+    ?>
+    <pre><?=var_dump($bandas)?></pre>
+    <pre><?=var_dump($textoBandas)?></pre>
+    
+
+
+
+
+
+    <hr>
     <h2>Filtros</h2>
     <h2>Strings</h2>
     <h2>Strings</h2>
