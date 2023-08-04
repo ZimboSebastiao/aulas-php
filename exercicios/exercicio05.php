@@ -83,10 +83,9 @@
         // Chamando e guardando o retorno
         $verificacao = notas(10, 6.5);
 
-
         // Função 2: Calcular o valor da Média
         function resultado(float $verificacao):string{
-            if ($verificacao > 7 ) {
+            if ($verificacao >= 7 ) {
                     return "<span class='aprovado'>Aprovado</span>";
                 }
                 return "<span class='reprovado'>Reprovado</span>";
@@ -94,6 +93,7 @@
         
     ?>
 
+    <!-- ======= Tabela com os resultados ======= -->
     <table>
         <tr>
             <th>Média</th>
