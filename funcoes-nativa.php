@@ -36,12 +36,23 @@
     <p><?=$fraseFeia?></p>
     <p><?=$fraseBunitinha?></p>
 
+    <h3>explode</h3>
+    <?php 
+    // Função que transforma uma string em um array
 
+    $linguagens = "HTML - CSS - JS - PHP";
+    $arrayLinguagens = explode(" - ", $linguagens);
+    ?>
 
-
+    <pre><?=var_dump($linguagens)?></pre>
+    <pre><?=var_dump($arrayLinguagens)?></pre>
 
     <hr>
     <h2>Númericas</h2>
+   
+
+
+
     <h2>Arrays</h2>
     <h2>Filtros</h2>
     <h2>Strings</h2>
