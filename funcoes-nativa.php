@@ -95,6 +95,14 @@
         <li>Idade: <?=$idade?></li>
     </ul>
 
+    <h3>array_sum</h3>
+    <?php 
+    // Função para somar os valores de array
+
+    $total = array_sum($valores);
+    ?>
+    <p>Soma dos valores: <?=$total?></p>
+
 
 
 
