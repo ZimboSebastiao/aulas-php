@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 05 - Funções</title>
     <style>
-        body {}
+        body {background-color: lavender;}
         .reprovado {
             color: red;
             font-weight: bold;
@@ -46,7 +46,7 @@
      <p>Média do Aluno: <?=$verificacao?></p>
      <p>Situação do Aluno: <?=resultado($verificacao)?></p>
 
-
+    
 
 
 
