@@ -60,7 +60,7 @@
 
     <hr>
     <h2>Arrays</h2>
-    <h2>implode()</h2>
+    <h3>implode()</h3>
     <?php
     // Função que transforma array em string
 
@@ -70,6 +70,30 @@
     <pre><?=var_dump($bandas)?></pre>
     <pre><?=var_dump($textoBandas)?></pre>
     
+    <h3>extract()</h3>
+    <?php 
+    // Função que estrai chaves associativas para variáveis
+
+    $aluno = [
+        "id" => 1,
+        "nome" => "Chaves do 8",
+        "idade" => 25,
+    ];
+    extract($aluno)
+    ?>
+    <!-- ======== Forma sem Função ======== -->
+    <!-- <ul>
+        <li>ID: <?=$aluno['id']?></li>
+        <li>Nome: <?=$aluno['nome']?></li>
+        <li>Idade: <?=$aluno['idade']?></li>
+    </ul> -->
+
+    <!-- ======== Forma com Função ======== -->
+    <ul>
+        <li>ID: <?=$id?></li>
+        <li>Nome: <?=$nome?></li>
+        <li>Idade: <?=$idade?></li>
+    </ul>
 
 
 
