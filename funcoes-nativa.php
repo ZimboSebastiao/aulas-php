@@ -158,7 +158,7 @@
     <h2>Segurança (criptografia)</h2>
     <?php 
     // Senha em texto puro (plani text)
-        $senha = "paçoca";
+        $senha = "123senac";
 
     // Algoritmos mais comuns para criptografia:
     // MD5, SHA1, SHA256
@@ -166,10 +166,15 @@
     // Estes algoritmos pegam dados e os codificam/criptografam, tornando um "hash" de dados embaralhados
     
     $senhaMD5 = md5($senha);
+    $senhaSHA1 = sha1($senha);
+    $senhaSHA256 = hash('sha256', $senha);
     ?>
 
     <p>Senha (texto puro): <?= $senha ?></p>
     <p>Senha (MD5): <?=$senhaMD5?></p>
+    <p>Senha SHA1: <?=$senhaSHA1?></p>
+    <p>Senha SHA1: <?=$senhaSHA256?></p>
+
 
 
     
