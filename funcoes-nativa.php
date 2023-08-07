@@ -125,9 +125,28 @@
 
 
     <hr>
-
     <h2>Filtros</h2>
-    <h2>Strings</h2>
+    <p>Recursos de an´slise e limpeza de dados aplicados atráves das funções <code>filter_var()</code> e <code>filter_input()</code>.</p>
+
+    <h3>Validação</h3>
+    <?php 
+        // $email = "tiago.com.br";
+        $email = "tiago@a.com.br";
+
+        
+    
+    
+    ?>
+    <pre><?=var_dump(filter_var($email, FILTER_VALIDATE_EMAIL)) ?></pre>
+
+
+    <h3>Sanitização</h3>
+
+
+
+
+    <hr>
+    <h2>Segurança</h2>
     <h2>Strings</h2>
     <h2>Strings</h2>
     
