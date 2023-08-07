@@ -176,6 +176,26 @@
     <p>Senha SHA1: <?=$senhaSHA256?></p>
 
 
+    <?php 
+    // Método recomendado para seguraça de senhas no PHP
+
+    $senhaSegura = password_hash($senha, PASSWORD_DEFAULT);
+    ?>
+    <p>Senha (com password_hash): <?=$senhaSegura?></p>
+
+    <?php 
+    // Como verificar o has da senha se ele pode mudar
+
+    $senhaDigitada = "123seac";
+
+    // if ($senhaDigitada === $senhaSegura) { // NÃO DA CERTO
+       if (password_verify($senhaDigitada, $senhaSegura)){
+        echo "senha correta pode entrar";
+    } else {
+        echo "senha errada, vaza daqui";
+    }
+
+    ?>
 
     
 </body>
