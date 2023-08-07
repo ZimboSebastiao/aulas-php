@@ -38,7 +38,22 @@ include "recursos.php";
         <li><?=$tecnologias[3]?></li>
     </ul>
 
-    
+    <hr>
+
+    <article>
+        <h2>Título qulquer</h2>
+        <?php include "texto.php"?>
+    </article>
+
+    <!-- 
+        include OU require 
+
+        A diferença entre eles é na forma como lidam no caso de acontecer algum erro na inclusão.
+
+        Erros de carregamento com include. dão aletas (warnings) mas NÃO PARA completamente a aplicação;
+
+        Erros de carregamento com require, dão erro fatal (fatal error). e PARA complentamente a aplicação.
+    -->
 
 
 </body>
