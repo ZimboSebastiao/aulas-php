@@ -132,15 +132,24 @@
     <?php 
         // $email = "tiago.com.br";
         $email = "tiago@a.com.br";
-
-        
-    
-    
     ?>
     <pre><?=var_dump(filter_var($email, FILTER_VALIDATE_EMAIL)) ?></pre>
 
 
     <h3>Sanitização</h3>
+    <?php 
+        $ataque = "<script> 
+            document.body.innerHTML = '<h1> Sou ráqui!! mwahaha </h1>'
+        </script>";
+        // Execução sem satização ()script é válido  
+        // echo $ataque; 
+
+        $ataqueSanitizado = filter_var($ataque, FILTER_SANITIZE_SPECIAL_CHARS);
+        // Execução com sanitização (script é anulado)
+        echo $ataqueSanitizado;
+        
+    
+    ?>
 
 
 
