@@ -126,7 +126,7 @@
 
     <hr>
     <h2>Filtros</h2>
-    <p>Recursos de an´slise e limpeza de dados aplicados atráves das funções <code>filter_var()</code> e <code>filter_input()</code>.</p>
+    <p>Recursos de análise e limpeza de dados aplicados atráves das funções <code>filter_var()</code> e <code>filter_input()</code>.</p>
 
     <h3>Validação</h3>
     <?php 
