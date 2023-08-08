@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e PHP</title>
+</head>
+<body>
+    <h1>Trabalhando com dados de formulário</h1>
+    <hr>
+
+    <form action="" method="get">
+        <!-- ========== Nome ========== -->
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+
+        <!-- ========== Email ========== -->
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <!-- ========== Mensagem ========== -->
+        <p>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </p>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
