@@ -23,10 +23,11 @@
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         $mensagem = $_POST["mensagem"];
-
         
 
-        $interesses = $_POST["interesses"];
+        
+        $interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
+
         $idade = $_POST["idade"];
     ?>
     <h2>Dados:</h2>
