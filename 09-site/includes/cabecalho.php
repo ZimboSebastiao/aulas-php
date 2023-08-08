@@ -1,18 +1,31 @@
 <?php 
+    
+    // Solução 2
+    // $pagina = basename($_SERVER['PHP_SELF']);
+
+    // switch ($pagina) {
+    //     case 'index.php':
+    //         $titulo = "Página Inicial";
+    //         break;
+    //     case 'cursos.php':
+    //         $titulo = "Cursos";
+    //         break;
+    //     case 'contato.php':
+    //         $titulo = "Contato";
+    //         break;
+    //     default:
+    //         $titulo = "Dúvidas";
+    //         break;
+    // }
+
+    // Solução 3
     $pagina = basename($_SERVER['PHP_SELF']);
-    switch ($pagina) {
-        case 'index.php':
-            $titulo = "Página Inicial";
-            break;
-        case 'cursos.php':
-            $titulo = "Cursos";
-            break;
-        case 'contato.php':
-            $titulo = "Contato";
-            break;
-        default:
-            $titulo = "Dúvidas";
-            break;
+
+    $titulo = match ($pagina) {
+        "index.php" => "Página Inicial",
+        "cursos.php" => "Cursos",
+        "duvidas.php" => "Dúvidas",
+        default => "Contato",    
     }
 ?>
 
