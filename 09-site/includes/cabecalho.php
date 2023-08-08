@@ -1,3 +1,21 @@
+<?php 
+    $pagina = basename($_SERVER['PHP_SELF']);
+    switch ($pagina) {
+        case 'index.php':
+            $titulo = "Página Inicial";
+            break;
+        case 'cursos.php':
+            $titulo = "Cursos";
+            break;
+        case 'contato.php':
+            $titulo = "Contato";
+            break;
+        default:
+            $titulo = "Dúvidas";
+            break;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
