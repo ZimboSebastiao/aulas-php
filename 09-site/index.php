@@ -1,4 +1,6 @@
-<?php require "includes/cabecalho.php";?>
+<?php 
+$titulo = "Página Inicial";
+require "includes/cabecalho.php";?>
         <h2>Bem-vindo ao site exemplo</h2>
         <p>Está é a primeira página do nosso site.</p>
         <p>
