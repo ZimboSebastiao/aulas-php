@@ -29,12 +29,14 @@
         </p>
 
         <div>
+            <!-- Importante: Campos checkbox necessitam de [] junto com o name 
+            para o back-end (php) entender como uma lista (array) de valores -->
             <p>Interesses: </p>
-            <input type="checkbox" name="interesses" id="node" value="node">
+            <input type="checkbox" name="interesses[]" id="node" value="node">
             <label for="node">Node.js</label>
-            <input type="checkbox" name="interesses" id="sql" value="sql">
+            <input type="checkbox" name="interesses[]" id="sql" value="sql">
             <label for="sql">SQL</label>
-            <input type="checkbox" name="interesses" id="php" value="php">
+            <input type="checkbox" name="interesses[]" id="php" value="php">
             <label for="php">PHP</label>
 
 
