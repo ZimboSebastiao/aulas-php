@@ -1,5 +1,4 @@
 <?php require "includes/cabecalho.php";?>
-<title>Site - PHP</title>
         <h2>Bem-vindo ao site exemplo</h2>
         <p>Está é a primeira página do nosso site.</p>
         <p>

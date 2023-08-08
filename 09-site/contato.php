@@ -1,5 +1,4 @@
 <?php require "includes/cabecalho.php";?>
-<title>Contato- PHP</title>
         <h2>Página de conato</h2>
         <p>Entre em contato</p>
         <p><a href="tel:+5511973604933">Telefone: (11) 97360-4933</a></p>

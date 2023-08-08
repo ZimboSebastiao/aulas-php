@@ -1,5 +1,4 @@
 <?php require "includes/cabecalho.php";?>
-    <title>Dúvidas - PHP</title>
         <h2>Página de dúvidas</h2>
         <h3>Principais dúvidas</h3>
         <details>
