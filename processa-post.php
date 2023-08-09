@@ -25,8 +25,13 @@
         $mensagem = $_POST["mensagem"];
         
 
+        // Solução usando ternário
+        // $interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
         
-        $interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
+        // Solução usando Operador de Coalescência: ??
+        //(Disponível a partir da versão 7 do PHP)
+        $interesses = $_POST["interesses"] ?? [];
+
 
         $idade = $_POST["idade"];
     ?>
