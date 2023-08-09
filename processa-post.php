@@ -18,14 +18,13 @@
         <p><a href="10-formulario.html">Voltar</a></p>
     <?php
         } else {
+            // Capturando os dados transmitidos
+            // $nome = filter_var($_POST["nome"], FILTER_SANITIZE_SPECIAL_CHARS);
+            $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
+            $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+            $idade = filter_input(INPUT_POST, "idade", FILTER_SANITIZE_NUMBER_INT);
+            $mensagem = filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_SPECIAL_CHARS);
 
-        // Capturando os dados transmitidos
-        // $nome = filter_var($_POST["nome"], FILTER_SANITIZE_SPECIAL_CHARS);
-        $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
-        $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-        $idade = filter_input(INPUT_POST, "idade", FILTER_SANITIZE_NUMBER_INT);
-        $mensagem = filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_SPECIAL_CHARS);
-        
 
         // Solução usando ternário
         // $interesses = isset($_POST["interesses"]) ? $_POST["interesses"] : [];
