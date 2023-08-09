@@ -20,9 +20,11 @@
         } else {
 
         // Capturando os dados transmitidos
-        $nome = $_POST["nome"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
+        // $nome = filter_var($_POST["nome"], FILTER_SANITIZE_SPECIAL_CHARS);
+        $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
+        $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+        $idade = filter_input(INPUT_POST, "idade", FILTER_SANITIZE_NUMBER_INT);
+        $mensagem = filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_SPECIAL_CHARS);
         
 
         // Solução usando ternário
@@ -30,10 +32,11 @@
         
         // Solução usando Operador de Coalescência: ??
         //(Disponível a partir da versão 7 do PHP)
-        $interesses = $_POST["interesses"] ?? [];
+
+        // $interesses = $_POST["interesses"] ?? [];
+        $interesses = filter_var_array($_POST["interesses"] ?? [], FILTER_SANITIZE_SPECIAL_CHARS);
 
 
-        $idade = $_POST["idade"];
     ?>
     <h2>Dados:</h2>
     <ul>
