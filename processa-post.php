@@ -40,10 +40,24 @@
         <li>Nome: <?=$nome?></li>
         <li>E-mail: <?=$email?></li>
         <li>Idade: <?=$idade?></li>
+       
+
+        <?php if(!empty($interesses)){?>
         <li>Interesses: <?= implode(", ", $interesses)?></li>
 
+
+        <!-- Versão 2: acessando cada interesse existente no array usando loop -->
+        <li>Interesses: 
+            <ul>
+                <?php foreach ($interesses as $interesse) {?>
+                <li><?=$interesse?></li> 
+                <?php }?>
+            </ul>
+        </li>
+        <?php }?>
+
         <!-- Se a variavel $mensagem não estiver vazia, mostre o <li> com a mensagem -->
-        <?php if(!empty($mensagem)){?>
+        <?php if(!empty($mensagem)){ ?>
         <li>Mensagem: <?=$mensagem?></li>
         <?php }?>
     </ul>
