@@ -19,7 +19,7 @@
 
         a {text-decoration: none !important;}
 
-        #span {text-align: center !important; display: flex; justify-content: center;}
+        #span {text-align: center !important;}
         
     </style>
 
@@ -47,10 +47,12 @@
             
     ?>
                 
-                <span class="btn btn-warning" id="span">Voce deve preencher, os campos <b> Nome </b> e <b> Preço </b>.</span>
+                <span class="btn btn-warning" id="span">Voce deve preencher, os campos <b>Nome</b> e <b>Preço</b>.</span>
                 <!-- <p class="btn btn-light"><a href="exercicio-html07.php">Voltar</a></p> -->
     <?php
-            }   
+            }   else {
+                echo "dados cadastrado";
+            }
         }     
     ?>
 
