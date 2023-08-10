@@ -6,6 +6,11 @@
     <title>Exercício 07</title>
 
     <style>
+        /* Esse monte de !important provavelmente
+        só foi necessário devido a ordem do CSS.
+        Se colocar o seu CSS depois do Bootstrap, são suas regras que
+        terão prioridade. */
+
         * {box-sizing: border-box;} 
 
         body {
@@ -89,13 +94,17 @@
     
     <?php
         
+        /* Esse array aparentemente não está sendo usado pra nada... */
         // ARRAY 
         $fabricantes = ["Samsung", "Lenovo", "Tecno", "Dell"];
 
         // Sanatização
         $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
         $fabricante = filter_input(INPUT_POST, "fabricante", FILTER_SANITIZE_SPECIAL_CHARS);
+
+        /* Uso correto dos filtros! */
         $preco = filter_input(INPUT_POST, 'preco', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+        
         $disponibilidade = filter_input(INPUT_POST, "disponibilidade", FILTER_SANITIZE_SPECIAL_CHARS);
         $descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
 

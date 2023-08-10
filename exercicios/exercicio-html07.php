@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 07</title>
 
+    <!-- Zimbo, o ideal é o seu css vir APÓS o do Bootstrap.
+    Desta forma, o seu sempre terá prioridade -->
     <style>
         * {box-sizing: border-box;} 
 
@@ -34,6 +36,12 @@
             <!-- ========== Nome ========== -->
             <p class="input-group mb-3">
                 <!-- <label for="nome">Nome do Produto</label> -->
+
+                <!-- Tenho dúvidas sobre se é correto substituir o <label>
+                pelo <span> da forma como você fez, principalmente quanto à acessibilidade.
+                Acho que vale a pena dar uma pesquisada sobre isso, talvez no próprio site do Bootstrap 
+                tenha algo sobre o assunto. -->
+
                 <span class="input-group-text" id="inputGroup-sizing-default">Nome do Produto</span>
                 <input type="text" name="nome" id="nome" require class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </p>
@@ -41,6 +49,7 @@
             <!-- ========== Fabricante ========== -->
             <p class="form-floating">
                 <select name="fabricante" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <!-- Uso correto! Numa situação real, o value seria um id do fabricante (vindo do banco) -->
                     <option selected></option>
                     <?php foreach ($fabricantes as $fabricante) {?>
                     <option value="<?=$fabricante;?>"><?=$fabricante?></option>
