@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 07</title>
+
+    <style>
+        * {box-sizing: border-box;} 
+
+        body {
+            background-color: #6a6679 !important;
+        }
+
+        #limitador {
+            width: 30vw !important;
+            margin: auto !important;
+        }
+
+        a {text-decoration: none !important;}
+
+        #span {text-align: center !important; display: flex; justify-content: center;}
+        
+    </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
     
@@ -26,12 +47,13 @@
             
     ?>
                 
-                <p style="color: red;" class="btn btn-outline-warning">Voce deve preencher, os campos Nome e Preço.</p>
-                <p><a href="exercicio-html07.php">Voltar</a></p>
+                <span class="btn btn-warning" id="span">Voce deve preencher, os campos <b> Nome </b> e <b> Preço </b>.</span>
+                <!-- <p class="btn btn-light"><a href="exercicio-html07.php">Voltar</a></p> -->
     <?php
             }   
         }     
     ?>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
