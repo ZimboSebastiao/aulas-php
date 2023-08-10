@@ -14,7 +14,7 @@
         }
 
         .limitador {
-            width: 70vw;
+            width: 35vw;
             margin: auto;
         }
 
