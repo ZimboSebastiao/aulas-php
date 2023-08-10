@@ -51,10 +51,11 @@
     
             <!-- ========== Preço ========== -->
             <div class="input-group mb-3">
+
                 <span class="input-group-text">$</span>
                 <span class="input-group-text">Preço</span>
                 <input type="number" name="preco" id="preco" step=".01" min="100" max="10000" require class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-             </div>
+            </div>
     
             <!-- ========== Disponibilidade ========== -->
             <div>
@@ -80,11 +81,8 @@
                 <button type="submit" name="enviar" id="enviar" class="btn btn-primary btn-lg">Enviar</button>
             </p>
         </form>
-
     </main>
     
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
