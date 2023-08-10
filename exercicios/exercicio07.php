@@ -12,14 +12,23 @@
             background-color: #6a6679 !important;
         }
 
-        #limitador {
+        .limitador {
             width: 30vw !important;
             margin: auto !important;
         }
 
         a {text-decoration: none !important;}
 
-        #span {text-align: center !important;}
+        .estilo {
+                text-align: center !important;
+                margin: 60px !important;
+                
+            }
+        .estilo2 {
+                /* text-align: center !important; */
+                margin: 200px !important;
+                
+            }
 
         table, th, td {
             border: solid 8px black;
@@ -97,9 +106,12 @@
             if( empty($_POST["nome"]) || empty($_POST["preco"])){
             
     ?>
-                
-                <span class="btn btn-warning" id="span">Voce deve preencher, os campos <b>Nome</b> e <b>Preço</b>.</span>
-                <!-- <p class="btn btn-light"><a href="exercicio-html07.php">Voltar</a></p> -->
+                <div class="limitador">
+
+                    <span class="btn btn-danger estilo">Voce deve preencher, os campos <b>Nome</b> e <b>Preço</b>.</span>
+                    <br>
+                    <span class="btn btn-light estilo2"><a href="exercicio-html07.php">Voltar</a></span>
+                </div>
     <?php
             }   else { ?>
                 <table>
